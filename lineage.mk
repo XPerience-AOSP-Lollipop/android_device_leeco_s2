@@ -2,15 +2,21 @@
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
-# Inherit device configuration
-$(call inherit-product, device/leeco/s2/full_s2.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit from onyx device
+$(call inherit-product, device/leeco/s2/device.mk)
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/XPe/config/common_full_phone.mk)
+
+# Call the proprietary setup
+$(call inherit-product-if-exists, vendor/leeco/s2/s2-vendor.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := s2
-PRODUCT_NAME := lineage_s2
+PRODUCT_NAME := xpe_s2
 PRODUCT_BRAND := LeEco
 PRODUCT_MANUFACTURER := LeMobile
 
