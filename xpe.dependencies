@@ -8,7 +8,15 @@
     "target_path": "kernel/leeco/msm8976"
   },
   {
+    "remote": "cm",
     "repository": "android_hardware_sony_thermanager",
-    "target_path": "hardware/sony/thermanager"
+    "target_path": "hardware/sony/thermanager",
+    "branch":      "cm-14.1"
+  },
+  {
+    "remote": "Muppet",
+    "repository": "proprietary_vendor_leeco",
+    "target_path": "vendor/leeco",
+    "branch":      "cm-14.1"    
   }
 ]
