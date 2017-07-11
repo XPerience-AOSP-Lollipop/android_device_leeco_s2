@@ -21,7 +21,8 @@
 
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">false</bool>
-
+    
+    <add-resource type="bool" name="config_buttonLightOnKeypressOnly"></add-resource>
     <bool name="config_buttonLightOnKeypressOnly">true</bool>
     
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
