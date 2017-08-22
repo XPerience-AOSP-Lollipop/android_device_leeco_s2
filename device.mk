@@ -138,7 +138,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Camera2
+    camera.msm8952 \
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -194,6 +195,7 @@ PRODUCT_PACKAGES += \
 # Libshims
 PRODUCT_PACKAGES += \
     libshims_camera \
+    libshims_cameraservice \
     libshims_ims
 
 # Lights
