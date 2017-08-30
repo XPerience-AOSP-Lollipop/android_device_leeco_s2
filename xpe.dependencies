@@ -7,6 +7,12 @@
     "repository": "android_kernel_leeco_msm8976",
     "target_path": "kernel/leeco/msm8976"
   },
+  { 
+    "remote"     : "lineage",
+    "repository" : "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "revision"   : "cm-14.1"
+  },
   {
     "remote": "cm",
     "repository": "android_hardware_sony_thermanager",
