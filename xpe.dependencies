@@ -3,7 +3,7 @@
     "repository": "android_device_qcom_common",
     "target_path": "device/qcom/common"
   },
-  {
+  { 
     "repository": "android_kernel_leeco_msm8976",
     "target_path": "kernel/leeco/msm8976"
   },
@@ -14,10 +14,10 @@
     "revision"   : "cm-14.1"
   },
   {
-    "remote": "cm",
-    "repository": "android_hardware_sony_thermanager",
+    "remote"     : "lineage",
+    "repository" : "LineageOS/android_hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager",
-    "branch":      "cm-14.1"
+    "revision"   : "cm-14.1"
   },
   {
     "remote": "Muppet",
